@@ -1,0 +1,43 @@
+import graph as gp
+import traverse as tr
+
+a = gp.vertex('a')
+b = gp.vertex('b')
+c = gp.vertex('c')
+d = gp.vertex('d')
+e = gp.vertex('e')
+f = gp.vertex('f')
+g = gp.vertex('g')
+h = gp.vertex('h')
+i = gp.vertex('i')
+j = gp.vertex('j')
+k = gp.vertex('k')
+
+graph = gp.undirect_graph()
+graph.addVertex(a)
+graph.addVertex(b)
+graph.addVertex(c)
+graph.addVertex(d)
+graph.addVertex(e)
+graph.addVertex(f)
+graph.addVertex(g)
+graph.addVertex(h)
+graph.addVertex(i)
+graph.addVertex(j)
+graph.addVertex(k)
+
+graph.addEdge('a','b')
+graph.addEdge('a','c')
+graph.addEdge('a','d')
+graph.addEdge('b','e')
+graph.addEdge('c','f')
+graph.addEdge('d','g')
+graph.addEdge('d','h')
+graph.addEdge('e','i')
+graph.addEdge('e','j')
+graph.addEdge('h','k')
+
+graph.printEdges()
+
+#tr.bfs(graph, 'a')
+tr.dfs(graph, 'a')
